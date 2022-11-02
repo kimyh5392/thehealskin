@@ -1,0 +1,190 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*@import "//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css";*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, etails, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+	margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: inherit;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+$kcolor1: #744a36;
+$kcolor2: #c3a78b;
+
+$md: "1024px";
+$lg: "1200px";
+$xl: "1600px";
+
+@mixin nns() {
+    font-family: 'NanumSquare', sans-serif;
+}
+@mixin apple() {
+	font-family: 'Apple SD Gothic Neo';
+}
+@mixin bell() {
+    font-family: 'Belleza', sans-serif;
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Apple SD Gothic Neo Thin'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/100_AppleSDGothicNeo-Thin.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/100_AppleSDGothicNeo-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Apple SD Gothic Neo UltraLight'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/200_AppleSDGothicNeo-UltraLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/200_AppleSDGothicNeo-UltraLight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Apple SD Gothic Neo Light'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/300_AppleSDGothicNeo-Light.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/300_AppleSDGothicNeo-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Apple SD Gothic Neo Medium'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/400_AppleSDGothicNeo-Medium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/400_AppleSDGothicNeo-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Apple SD Gothic Neo Regular'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/500_AppleSDGothicNeo-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/500_AppleSDGothicNeo-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Apple SD Gothic Neo SemiBold'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/600_AppleSDGothicNeo-SemiBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/600_AppleSDGothicNeo-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Apple SD Gothic Neo Bold'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/700_AppleSDGothicNeo-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/700_AppleSDGothicNeo-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Apple SD Gothic Neo ExtraBold'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/800_AppleSDGothicNeo-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/800_AppleSDGothicNeo-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Apple SD Gothic Neo Heavy'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/900_AppleSDGothicNeo-Heavy.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/900_AppleSDGothicNeo-Heavy.otf') format('opentype');
+}
+
+@mixin transition($property: all, $duration: .15s, $timing: linear, $delay: 0s) {
+	-webkit-transition-property: $property;
+    transition-property: $property;
+	-webkit-transition-duration: $duration;
+    transition-duration: $duration;
+	-webkit-transition-timing-function: $timing;
+    transition-timing-function: $timing;
+	-webkit-transition-delay: $delay;
+    transition-delay: $delay;
+}
+
+html, body {
+    width: 100%;
+    min-width: 360px;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+	@include nns();
+    letter-spacing: -.5px;
+    font-weight: 400;
+    word-break: keep-all;
+    box-sizing: border-box;
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    @media(min-width: $md) {
+        
+    }
+}
+
+.container-fluid {
+    display: block;
+    width: 100%;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+hr {
+	display: block;
+	border: 0;
+	margin: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, select, textarea {
+    font-family: inherit;
+    outline: none !important;
+}
+a, button {
+    color: #000;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    background: none;
+    &:hover {
+        color: #000;
+    }
+}
